@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/jerison/Big_Data/models/model1.ckpt"
+all_model_checkpoint_paths: "/home/jerison/Big_Data/models/model1.ckpt"
