@@ -11,7 +11,9 @@
 用户在宿主机上通过curl指令，将含有数字0~9的图片（.png）Post至本地服务器，服务器返回上传文件名、数字识别结果以及文件上传时间，并将其保存在Cassandra数据库中。目前可以实现的特性有：
 
 :white_check_mark: 项目本地运行
+
 :white_check_mark: 项目部署在Docker容器中运行
+
 :white_check_mark: 利用docker volume将主机上存有训练模型的目录挂载到容器内的指定目录，从而能在容器内直接载入宿主机上的训练模型。
 
 
