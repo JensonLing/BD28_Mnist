@@ -30,11 +30,16 @@ $docker load -i Mnist_final.tar
 ```
 载入成功后，通过`docker images`指令，您将看到名为`final_v3:v3`的镜像。
 
-或者您可直接从dockerhub中拉取该镜像：
+#### 或者
+
+您可直接从dockerhub中拉取该镜像：
 ```
 docker pull lingjie981119/bd28_mnist
 ```
 
+#### 或者
+
+直接从百度网盘下载：[网盘地址](https://pan.baidu.com/s/1u-_MWZvQX-9rKQStRTCU1w) 提取码：apnw
 
 
 ### 启动Docker容器
