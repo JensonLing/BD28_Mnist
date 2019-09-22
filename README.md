@@ -34,8 +34,9 @@ $docker load -i Mnist_final.tar
 
 您可直接从dockerhub中拉取该镜像：
 ```
-docker pull lingjie981119/bd28_mnist
+docker pull lingjie981119/bd28_mnist:v3
 ```
+注意拉取后镜像名为lingjie981119/bd28_mnist:v3，后文所有操作中final_v3:v3都用其替代
 
 #### 或者
 
