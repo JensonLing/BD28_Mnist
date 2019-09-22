@@ -7,7 +7,7 @@
 - 项目源码（包括各历史版本的测试代码、模型训练代码、图像转换代码）
 - MNIST训练模型（.ckpt文件）
 
-###当前版本（V3.0）功能描述
+### 当前版本（V3.0）功能描述
 用户在宿主机上通过curl指令，将含有数字0~9的图片（.png）Post至本地服务器，服务器返回上传文件名、数字识别结果以及文件上传时间，并将其保存在Cassandra数据库中。目前可以实现的特性有：
 
 :white_check_mark: 项目本地运行
@@ -16,8 +16,8 @@
 
 
 
-##使用指南
-###运行前的准备
+## 使用指南
+### 运行前的准备
 请确保您的主机装有`Docker`环境及`curl`工具，可在命令行中键入`docker --version` `curl --version`以验证是否成功安装。
 
 将本项目clone到本地，打开命令行进入镜像文件所在目录，并键入以下命令：
@@ -26,7 +26,7 @@ $docker load -i Mnist_final.tar
 ```
 载入成功后，通过`docker images`指令，您将看到名为`final_v3:v3`的镜像。
 
-###启动Docker容器
+### 启动Docker容器
 在命令行中键入以下指令：
 ```
 $docker run -v [主机上模型文件夹路径]:/app/Big_Data/models -p 4000:80 -it final_v3:v3
@@ -43,7 +43,7 @@ $docker exec -it [容器ID] bash
 $python /app/final_mnist.py
 ```
 
-###上传图片
+### 上传图片
 在命令行中键入：
 ```
 curl -F "file=@[要上传的.png文件路径]" localhost:4000/upload
@@ -55,7 +55,7 @@ Result: [result]
 Upload Time: [time]
 ```
 
-###连接Cassandra数据库
+### 连接Cassandra数据库
 通过cqlsh连接Cassandra数据库来查看文件名、结果及上传时间是否正确存储。
 
 键入以下命令以进入容器：（容器ID可通过`docker ps`查看）
@@ -75,4 +75,4 @@ Select * from mytable;
 
 
 
-####:arrow_forward:具体演示见视频文件 Demo_Video.mp4
+#### :arrow_forward:具体演示见视频文件 Demo_Video.mp4
