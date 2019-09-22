@@ -1,7 +1,7 @@
 # Mnist in Docker
 欢迎！Mnist in Docker是由来自MIT LIGO LAB的Dr.Fan指导，本人独立完成的大数据实习项目，本仓库目前包含以下内容：
 
-- 项目打包成的Docker镜像文件Mnist_fianl.tar
+- <s>项目打包成的Docker镜像文件Mnist_fianl.tar</s>（镜像文件拉取方式见下文）
 - 项目报告
 - 项目演示视频（Demo_Video.mp4）
 - 项目源码（包括各历史版本的测试代码、模型训练代码、图像转换代码）
