@@ -14,7 +14,7 @@
 
 :white_check_mark: 项目部署在Docker容器中运行
 
-:white_check_mark: 利用docker volume将主机上训练模型的目录挂载到容器内的指定目录，从而能在容器内直接载入宿主机上的训练模型。
+:white_check_mark: 利用docker volume将主机上训练模型的目录挂载到容器内的指定目录，从而能在容器内直接载入宿主机上的模型。
 
 
 
