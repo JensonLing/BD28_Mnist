@@ -18,6 +18,8 @@
 
 
 
+
+
 ## 使用指南
 ### 运行前的准备
 请确保您的主机装有`Docker`环境及`curl`工具，可在命令行中键入`docker --version` `curl --version`以验证是否成功安装。
@@ -27,6 +29,8 @@
 $docker load -i Mnist_final.tar
 ```
 载入成功后，通过`docker images`指令，您将看到名为`final_v3:v3`的镜像。
+
+
 
 ### 启动Docker容器
 在命令行中键入以下指令：
@@ -45,6 +49,8 @@ $docker exec -it [容器ID] bash
 $python /app/final_mnist.py
 ```
 
+
+
 ### 上传图片
 在命令行中键入：
 ```
@@ -56,6 +62,8 @@ Upload File Name: [filename]
 Result: [result]
 Upload Time: [time]
 ```
+
+
 
 ### 连接Cassandra数据库
 通过cqlsh连接Cassandra数据库来查看文件名、结果及上传时间是否正确存储。
@@ -74,6 +82,8 @@ $cqlsh localhost
 use mnist_data;
 Select * from mytable;
 ```
+
+
 
 
 
